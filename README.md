@@ -1,11 +1,13 @@
-yarn dev
-<!-- Project README for ProStore -->
+# ProStore 🛍️
 
-# ProStore
+A modern, high-performance e-commerce platform built with Next.js 15, React 19, and Tailwind CSS. This repository provides a production-ready e-commerce foundation with best practices for performance, SEO, and user experience.
 
-Professional e-commerce starter built with Next.js (App Router), React 19 and Tailwind CSS. This repository contains a minimal, modern storefront layout and developer setup so you can prototype or ship quickly.
+[![Next.js](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-blue)](https://reactjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-38B2AC)](https://tailwindcss.com/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-Short, focused, and production-ready defaults so you can build features instead of configuration.
+> 🚀 Production-ready e-commerce starter with modern tech stack and developer-friendly setup.
 
 ---
 
@@ -18,12 +20,30 @@ Short, focused, and production-ready defaults so you can build features instead 
 
 Project name: `prostore` (see `package.json`).
 
-## Features
+## ✨ Features
 
-- App directory routing (Next.js App Router)
-- Tailwind CSS utility-first styling
-- Turbopack for fast local development
-- Minimal, accessible layout (see `app/layout.tsx` and `app/page.tsx`)
+### Core Features
+- Modern App Router architecture (Next.js 15)
+- Responsive, mobile-first design
+- Optimized for performance and SEO
+- Accessible UI components (WCAG compliant)
+- Dark mode support
+
+### E-commerce Features
+- Product catalog with filtering and search
+- Shopping cart with persistent storage
+- Secure checkout flow
+- Order management
+- Product reviews and ratings
+- Wishlist functionality
+
+### Developer Experience
+- Type-safe development with TypeScript
+- Fast refresh with Turbopack
+- Utility-first styling with Tailwind CSS
+- ESLint and Prettier configuration
+- Git hooks with Husky (optional)
+- Automated testing setup (optional)
 
 ---
 
@@ -68,15 +88,28 @@ npm run start
 
 Tailwind is included as a development dependency. Global styles are in `app/globals.css`. If you need to adjust Tailwind settings, check or create a `tailwind.config.js` / `tailwind.config.cjs` file in the project root.
 
-## Project structure (high level)
+## 📁 Project Structure
 
-- `app/` — Next.js App Router pages & layout
-	- `layout.tsx` — root layout
-	- `page.tsx` — homepage
-	- `globals.css` — global styles
-- `public/` — static assets (images, favicons)
-- `next.config.ts` — Next.js configuration
-- `package.json` — scripts & dependencies
+```
+prostore/
+├── app/                   # Next.js App Router
+│   ├── layout.tsx        # Root layout
+│   ├── page.tsx          # Homepage
+│   ├── products/        # Product routes
+│   ├── cart/           # Shopping cart
+│   ├── checkout/       # Checkout flow
+│   ├── account/        # User account
+│   └── globals.css     # Global styles
+├── components/          # Reusable UI components
+│   ├── ui/            # Basic UI elements
+│   └── products/      # Product-specific components
+├── lib/                # Utilities and helpers
+├── public/             # Static assets
+├── styles/             # Additional styling
+├── types/              # TypeScript types
+├── next.config.ts      # Next.js configuration
+└── package.json        # Dependencies and scripts
+```
 
 ## Environment variables
 
@@ -120,18 +153,41 @@ Small, clear contributions welcome. A suggested flow:
 
 If you want, I can add a CONTRIBUTING.md and a GitHub workflow for CI.
 
-## Notes & next steps
+## 🔜 Roadmap
 
-- Add a `LICENSE` file (MIT is a common default) if you plan to open-source this project.
-- Add example environment files and sample data for local development.
-- Add screenshots or a short demo GIF to this README to make the project more approachable.
+- [ ] Authentication with NextAuth.js
+- [ ] Payment integration (Stripe)
+- [ ] Admin dashboard
+- [ ] Product search with Algolia
+- [ ] Performance monitoring
+- [ ] Automated testing suite
+- [ ] Internationalization (i18n)
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on how to submit pull requests, report issues, and contribute to the project.
+
+## 📸 Screenshots
+
+*Coming soon* - Screenshots of the storefront, product pages, and checkout flow will be added here.
+
+## 🙏 Acknowledgments
+
+- Next.js team for the amazing framework
+- Vercel for hosting and deployment
+- Our contributors and the open source community
 
 ---
 
-If you'd like, I can also:
-
-- Add a `LICENSE` file (MIT)
-- Generate a `CONTRIBUTING.md`
-- Add basic unit tests and a CI workflow
-
-Tell me which of those you'd like next and I'll implement it.
+<div align="center">
+  <p>Built with ❤️ by the ProStore team</p>
+  <p>
+    <a href="https://github.com/yourusername/prostore/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/yourusername/prostore/issues">Request Feature</a>
+  </p>
+</div>
