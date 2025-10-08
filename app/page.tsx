@@ -1,5 +1,9 @@
+import { Button } from "@/components/ui/button";
+
 export default function Home() {
   return (
-    <h1>Prostore</h1>
+    <>
+        <Button variant="accent">Hello World</Button>
+    </>
   );
 }
