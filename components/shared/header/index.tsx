@@ -3,6 +3,7 @@ import { APP_NAME } from "@/lib/constants"
 import { ShoppingCart, UserIcon } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import ToggleMode from "./mode-toggle"
 
 const Header = () => {
   return (
@@ -15,10 +16,11 @@ const Header = () => {
                 </Link>
             </div>
             <div className="space-x-2">
+                <ToggleMode/>
                 <Button variant="ghost" asChild>
                     <Link href="/cart"><ShoppingCart/> Cart</Link>
                 </Button>
-                <Button variant="ghost" asChild>
+                <Button asChild>
                     <Link href="/signin"><UserIcon/> Sign IN</Link>
                 </Button>
             </div>
